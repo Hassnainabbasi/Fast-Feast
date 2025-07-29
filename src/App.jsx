@@ -435,7 +435,7 @@ function App() {
         <CartContextProvider>
           <AuthContext.Consumer>
             {({ currentUser }) => {
-              const userName = currentUser ? currentUser.email : ''; 
+              const userName = currentUser ? currentUser.displayName : ''; 
               const isLogin = !!currentUser; 
 
               return (
